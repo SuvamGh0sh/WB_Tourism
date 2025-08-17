@@ -9,13 +9,42 @@
         header {background-color: #4CAF50; color: white; padding: 20px; text-align: center;}
         nav a {margin: 0 15px; color: white; text-decoration: none; font-weight: bold;}
         nav a:hover {text-decoration: underline;}
-        main {padding: 20px; max-width: 800px; margin: auto; background: white; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);}
-        img {width: 100%; border-radius: 10px;}
-        footer {background-color: #333; color: white; text-align: center; padding: 20px; margin-top: 40px;}
+        main {padding: 20px; max-width: 900px; margin: auto; background: white; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);}
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 24px;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+        .card {
+            background: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+            padding: 20px;
+            flex: 1 1 270px;
+            max-width: 270px;
+            min-width: 220px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .card img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            max-height: 120px;
+            object-fit: cover;
+        }
         h2, h3 {text-align: center;}
-        ul {line-height: 1.6;}
+        ul {line-height: 1.6; padding-left: 18px;}
         a.back {display: block; margin: 20px 0; text-align: center; text-decoration: none; color: #4CAF50; font-weight: bold;}
         a.back:hover {text-decoration: underline;}
+        footer {background-color: #333; color: white; text-align: center; padding: 20px; margin-top: 40px;}
+        @media (max-width: 700px) {
+            .flex-container {flex-direction: column; gap: 16px;}
+            main {padding: 8px;}
+        }
     </style>
 </head>
 <body>
@@ -31,47 +60,64 @@
 
     <main>
         <h2>Sundarbans</h2>
-        <img src="images/sundarbans.jpg" alt="Sundarbans">
-        <p>The Sundarbans is the largest mangrove forest in the world and a UNESCO World Heritage Site, home to the famous Royal Bengal Tigers and diverse wildlife.</p>
-        <h3>Fun Facts:</h3>
-        <ul>
-            <li>Largest tidal mangrove forest in the world.</li>
-            <li>Famous for its unique ecosystem and wildlife.</li>
-            <li>Home to the Royal Bengal Tiger and estuarine crocodiles.</li>
-        </ul>
-        <h3>How to Reach:</h3>
-        <ul>
-            <li>By Air: Nearest airport is Netaji Subhas Chandra Bose International Airport, Kolkata.</li>
-            <li>By Train: Canning is the nearest railway station, followed by a boat ride.</li>
-            <li>By Road: Accessible from Kolkata via road to Canning or Godkhali.</li>
-        </ul>
-        <h3>Best Time to Visit:</h3>
-        <p>The best time to visit the Sundarbans is from November to February when the weather is cooler and ideal for wildlife spotting.</p>
-        <h3>Local Cuisine:</h3>
-        <ul>
-            <li>Try the local fish curry, especially Hilsa and Prawn Malai Curry.</li>
-            <li>Enjoy traditional Bengali sweets like Mishti Doi and Sandesh.</li>
-            <li>Sample local rice dishes, often served with fresh vegetables.</li>
-        </ul>
-        <h3>Accommodation:</h3>
-        <ul>
-            <li>Luxury: Sundarbans Jungle Resort, Taj Gateway Hotel.</li>
-            <li>Mid-range: Sunderban Tiger Camp, Mangrove Village.</li>
-            <li>Budget: Local homestays and guesthouses available in nearby villages.</li>
-        </ul>
-        <h3>Local Attractions:</h3>
-        <ul>
-            <li>Visit the Sajnekhali Wildlife Sanctuary for bird watching.</li>
-            <li>Explore the Sudhanyakhali Watch Tower for tiger spotting.</li>
-            <li>Take a boat ride through the mangroves to see the unique flora and fauna.</li>
-            <li>Discover the local villages and their culture, including traditional fishing methods.</li>
-        </ul>
-        <p><img src="images/sundarbans_wildlife.jpg" alt="Sundarbans Wildlife"></p>
+        <div class="flex-container">
+            <div class="card">
+                <img src="images/sundarbans.jpg" alt="Sundarbans">
+                <h3>About</h3>
+                <p>The Sundarbans is the largest mangrove forest in the world and a UNESCO World Heritage Site, home to the Royal Bengal Tigers and diverse wildlife.</p>
+            </div>
+            <div class="card">
+                <h3>Fun Facts</h3>
+                <ul>
+                    <li>Largest tidal mangrove forest in the world.</li>
+                    <li>Unique ecosystem & wildlife.</li>
+                    <li>Home to the Royal Bengal Tiger & estuarine crocodiles.</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>How to Reach</h3>
+                <ul>
+                    <li><strong>Air:</strong> Netaji Subhas Chandra Bose Int. Airport, Kolkata.</li>
+                    <li><strong>Train:</strong> Canning station + boat ride.</li>
+                    <li><strong>Road:</strong> From Kolkata via Canning or Godkhali.</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Best Time to Visit</h3>
+                <p>November to February: cooler weather, ideal for wildlife spotting.</p>
+            </div>
+            <div class="card">
+                <h3>Local Cuisine</h3>
+                <ul>
+                    <li>Fish curry: Hilsa & Prawn Malai Curry.</li>
+                    <li>Bengali sweets: Mishti Doi, Sandesh.</li>
+                    <li>Local rice dishes & fresh vegetables.</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Accommodation</h3>
+                <ul>
+                    <li>Luxury: Sundarbans Jungle Resort, Taj Gateway Hotel.</li>
+                    <li>Mid-range: Sunderban Tiger Camp, Mangrove Village.</li>
+                    <li>Budget: Homestays & guesthouses in villages.</li>
+                </ul>
+            </div>
+            <div class="card">
+                <img src="images/sundarbans_wildlife.jpg" alt="Sundarbans Wildlife">
+                <h3>Local Attractions</h3>
+                <ul>
+                    <li>Sajnekhali Wildlife Sanctuary (bird watching)</li>
+                    <li>Sudhanyakhali Watch Tower (tiger spotting)</li>
+                    <li>Boat ride through mangroves</li>
+                    <li>Local village culture & fishing methods</li>
+                </ul>
+            </div>
+        </div>
         <a class="back" href="index.html">← Back to Home</a>
     </main>
 
     <footer>
-        <p>Contact Us: 123, Kolkata Street, West Bengal | Email: info@wbtravel.com | Phone: +91 9876543210</p>
+        <p>Contact Us: 123, Kolkata Street, West Bengal | Email: info@wbtravel.com | Phone: +91 6295753250</p>
     </footer>
 </body>
 </html>
