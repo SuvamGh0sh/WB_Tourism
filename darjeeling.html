@@ -5,14 +5,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Darjeeling - Explore West Bengal</title>
     <style>
-        body {font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4;}
-        header {background-color: #4CAF50; color: white; padding: 20px; text-align: center;}
-        nav a {margin: 0 15px; color: white; text-decoration: none; font-weight: bold;}
-        main {padding: 20px; max-width: 800px; margin: auto;}
-        img {width: 100%; height: auto; border-radius: 10px;}
-        a.back {display: block; margin: 20px 0; text-align: center; text-decoration: none; color: #4CAF50; font-weight: bold;}
-        a.back:hover {text-decoration: underline;}
-        footer {background-color: #333; color: white; text-align: center; padding: 20px; margin-top: 40px;}
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        main {
+            padding: 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-bottom: 40px;
+        }
+        .card {
+            background-color: #fffbea;
+            border-radius: 15px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.09);
+            padding: 24px;
+            flex: 1 1 340px;
+            min-width: 300px;
+            max-width: 400px;
+            margin-bottom: 10px;
+        }
+        .card:nth-child(2n) {
+            background-color: #e0f7fa;
+        }
+        .card:nth-child(3n) {
+            background-color: #ffe0e0;
+        }
+        .card:nth-child(4n) {
+            background-color: #e0ffe0;
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 12px;
+        }
+        .card ul, .card p {
+            margin-bottom: 0;
+        }
+        a.back {
+            display: block;
+            margin: 20px 0;
+            text-align: center;
+            text-decoration: none;
+            color: #4CAF50;
+            font-weight: bold;
+        }
+        a.back:hover {
+            text-decoration: underline;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+        h2, h3 {
+            text-align: center;
+        }
+        iframe {
+            border-radius: 10px;
+        }
     </style>
 </head>
 <body>
@@ -28,54 +102,72 @@
 
     <main>
         <h2>Darjeeling</h2>
-        <img src="images/darjeeling.jpg" alt="Darjeeling">
-        <p>Darjeeling, known as the "Queen of the Hills," is famous for its tea gardens, scenic views, and the iconic Darjeeling Himalayan Railway (a UNESCO World Heritage Site).</p>
-        <h3>Fun Facts:</h3>
-        <ul>
-            <li>Home to the world's oldest mountain railway.</li>
-            <li>Famous for Darjeeling tea, exported worldwide.</li>
-            <li>Offers breathtaking views of Mount Kanchenjunga.</li>
-        </ul>
-        <h3>How to Reach:</h3>
-        <ul>
-            <li><img src="bagdora_airport.jpg" alt="airport">By Air: Nearest airport is Bagdogra, about 70 km away.</li>
-            <li>By Train: New Jalpaiguri is the nearest major railway station.</li>
-            <li>By Road: Well-connected by road from Siliguri and other nearby towns.</li>
-        </ul>
-        <h3>Best Time to Visit:</h3>
-        <p>The best time to visit Darjeeling is from March to June and September to November when the weather is pleasant and ideal for sightseeing.</p>
-        <h3>Local Cuisine:</h3>         
-        <ul>
-            <li><img src="dar_food.jpg" alt="Local cusines">Try the local momos (dumplings) and thukpa (noodle soup).</li>
-            <li>Enjoy the famous Darjeeling tea at local tea estates.</li>
-            <li>Sample traditional Bengali sweets like sandesh and rasgulla.</li>
-        </ul>
-        <h3>Accommodation:</h3> 
-        <ul>
-            <li><img src="homestay.jpg" alt="Homestay">Luxury: Mayfair Darjeeling, Windamere Hotel.</li>
-            <li>Mid-range: Hotel Seven Seventeen, The Elgin.</li>
-            <li>Budget: Hotel Broadway, Hotel Hill Crown.</li>
-        </ul>
-        <h3>Local Attractions:</h3>
-        <ul>
-            <li> <img src="tigerhill.jpg" alt="Tiger hill photo">Visit the Tiger Hill for a stunning sunrise view over Kanchenjunga.</li>
-            <li> <img src="batasia.jpg" alt="Batasia Loop">Explore the Batasia Loop and Ghoom Monastery.</li>
-            <li><img src="dar_Railway.jgp.jpg" alt="Himalyan Railway">Take a ride on the Darjeeling Himalayan Railway.</li>
-            <li><img src="darjeeling.jpg" alt="peace pagoda"> the Peace Pagoda and Japanese Temple.</li>
-            <li><img src="dar_zoo.jpg" alt="Zoo">
-                Visit the Padmaja Naidu Himalayan Zoological Park to see rare Himalayan species.</li>
-        </ul>
-      <ul>
-        <h3>Location Map:</h3>
-<iframe 
-  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2903.015996198387!2d88.263638!3d27.041021!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e4259c48c6b40b%3A0xadc314c9441aee0d!2sDarjeeling%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
-  width="100%" 
-  height="400" 
-  style="border:0;" 
-  allowfullscreen="" 
-  loading="lazy">
-</iframe>
-          </ul>
+        <div class="flex-container">
+            <div class="card">
+                <img src="images/darjeeling.jpg" alt="Darjeeling">
+                <p>
+                    Darjeeling, known as the "Queen of the Hills," is famous for its tea gardens, scenic views, and the iconic Darjeeling Himalayan Railway (a UNESCO World Heritage Site).
+                </p>
+            </div>
+            <div class="card">
+                <h3>Fun Facts:</h3>
+                <ul>
+                    <li>Home to the world's oldest mountain railway.</li>
+                    <li>Famous for Darjeeling tea, exported worldwide.</li>
+                    <li>Offers breathtaking views of Mount Kanchenjunga.</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>How to Reach:</h3>
+                <ul>
+                    <li><img src="bagdora_airport.jpg" alt="airport" style="width:40px;height:40px;vertical-align:middle;"> By Air: Nearest airport is Bagdogra, about 70 km away.</li>
+                    <li>By Train: New Jalpaiguri is the nearest major railway station.</li>
+                    <li>By Road: Well-connected by road from Siliguri and other nearby towns.</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Best Time to Visit:</h3>
+                <p>The best time to visit Darjeeling is from March to June and September to November when the weather is pleasant and ideal for sightseeing.</p>
+            </div>
+            <div class="card">
+                <h3>Local Cuisine:</h3>         
+                <ul>
+                    <li><img src="dar_food.jpg" alt="Local cuisines" style="width:40px;height:40px;vertical-align:middle;"> Try the local momos (dumplings) and thukpa (noodle soup).</li>
+                    <li>Enjoy the famous Darjeeling tea at local tea estates.</li>
+                    <li>Sample traditional Bengali sweets like sandesh and rasgulla.</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Accommodation:</h3> 
+                <ul>
+                    <li><img src="homestay.jpg" alt="Homestay" style="width:40px;height:40px;vertical-align:middle;"> Luxury: Mayfair Darjeeling, Windamere Hotel.</li>
+                    <li>Mid-range: Hotel Seven Seventeen, The Elgin.</li>
+                    <li>Budget: Hotel Broadway, Hotel Hill Crown.</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Local Attractions:</h3>
+                <ul>
+                    <li><img src="tigerhill.jpg" alt="Tiger hill photo" style="width:40px;height:40px;vertical-align:middle;"> Visit the Tiger Hill for a stunning sunrise view over Kanchenjunga.</li>
+                    <li><img src="batasia.jpg" alt="Batasia Loop" style="width:40px;height:40px;vertical-align:middle;"> Explore the Batasia Loop and Ghoom Monastery.</li>
+                    <li><img src="dar_Railway.jgp.jpg" alt="Himalyan Railway" style="width:40px;height:40px;vertical-align:middle;"> Take a ride on the Darjeeling Himalayan Railway.</li>
+                    <li><img src="darjeeling.jpg" alt="peace pagoda" style="width:40px;height:40px;vertical-align:middle;"> The Peace Pagoda and Japanese Temple.</li>
+                    <li><img src="dar_zoo.jpg" alt="Zoo" style="width:40px;height:40px;vertical-align:middle;">
+                        Visit the Padmaja Naidu Himalayan Zoological Park to see rare Himalayan species.</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Location Map:</h3>
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2903.015996198387!2d88.263638!3d27.041021!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e4259c48c6b40b%3A0xadc314c9441aee0d!2sDarjeeling!5e0!3m2!1sen!2sin!4v1625149387306!5m2!1sen!2sin"
+                    width="100%" 
+                    height="200" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+        </div>
         <p><a class="back" href="index.html">Back to Home</a></p>
     </main>
 
@@ -83,12 +175,4 @@
         <p>Contact Us: 123, Kolkata Street, West Bengal | Email: info@wbtravel.com | Phone: +91 9876543210</p>
     </footer>
 </body>
-
 </html>
-
-
-
-
-
-
-
